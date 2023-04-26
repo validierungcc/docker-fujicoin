@@ -14,7 +14,6 @@ Example docker-compose.yml
             container_name: fujicoin
             image: vfvalidierung/fujicoin
             restart: unless-stopped
-            user: 1000:1000
             ports:
                 - '38348:38348'
                 - '127.0.0.1:8048:8048'
