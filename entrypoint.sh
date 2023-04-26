@@ -21,7 +21,7 @@ echo "Created new configuration at ${FUJICOIN_CONF}"
 fi
 
 if [ $# -eq 0 ]; then
-  /fuji/fujicoin/src/fujicoind -rpcbind=:8048 -rpcallowip=* -printtoconsole=1
+  /fuji/fujicoin/src/fujicoind -rpcbind=0.0.0.0 -rpcport=8048 -rpcallowip=0.0.0.0/0 -printtoconsole=1
 else
   exec "$@"
 fi
