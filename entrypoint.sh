@@ -3,7 +3,7 @@
 set -meuo pipefail
 
 FUJICOIN_DIR=/fuji/.fujicoin/
-FUJICOIN_CONF=/fuji/.fujicoin/eMark.conf
+FUJICOIN_CONF=/fuji/.fujicoin/settings.json
 
 if [ -z "${FUJICOIN_RPCPASSWORD:-}" ]; then
   # Provide a random password.
@@ -16,7 +16,6 @@ server=1
 rpcuser=${FUJICOIN_RPCUSER:-fujicoinrpc}
 rpcpassword=${FUJICOIN_RPCPASSWORD}
 rpcclienttimeout=${FUJICOIN_RPCCLIENTTIMEOUT:-30}
-printtoconsole=1
 EOF
 echo "Created new configuration at ${FUJICOIN_CONF}"
 fi
