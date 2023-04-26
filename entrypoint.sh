@@ -3,7 +3,7 @@
 set -meuo pipefail
 
 FUJICOIN_DIR=/fuji/.fujicoin/
-FUJICOIN_CONF=/fuji/.fujicoin/settings.json
+FUJICOIN_CONF=/fuji/.fujicoin/fujicoin.conf
 
 if [ -z "${FUJICOIN_RPCPASSWORD:-}" ]; then
   # Provide a random password.
